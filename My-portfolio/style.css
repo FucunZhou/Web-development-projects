@@ -393,6 +393,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin: 180px auto;
 }
 
 .contact-info-upper-container {
@@ -434,6 +435,5 @@ footer {
 }
 
 footer p {
-  margin-top: 200px;
   text-align: center;
 }
