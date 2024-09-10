@@ -48,10 +48,6 @@
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-  margin-bottom: 25px; /* 增加间距 */
-}
-
 .form-group input,
 .form-group textarea {
   width: 100%;
