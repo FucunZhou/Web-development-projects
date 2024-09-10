@@ -1,0 +1,200 @@
+/* ... existing styles ... */
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 50px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+#contact-form button {
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #005582;
+}
+
+.contact-form {
+  max-width: 800px; /* 增加宽度 */
+  margin: 0 auto;
+  padding: 40px; /* 增加内边距 */
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 25px; /* 增加间距 */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px; /* 增加内边距 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group textarea {
+  height: 200px; /* 增加文本区域高度 */
+  resize: vertical;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 更新悬停效果 */
+.btn:hover, .icon:hover, .contact-form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover, .contact-form button:hover {
+  background-color: #005582; /* 使用暗色 */
+}
+
+.icon:hover {
+  filter: brightness(0.8) drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+
+/* 添加输入动画 */
+@keyframes inputFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-group input,
+.form-group textarea {
+  animation: inputFadeIn 0.5s ease-out forwards;
+}
+
+.form-group:nth-child(1) input { animation-delay: 0.1s; }
+.form-group:nth-child(2) input { animation-delay: 0.2s; }
+.form-group:nth-child(3) textarea { animation-delay: 0.3s; }
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #0077b5;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider .fa-sun {
+  color: #f39c12;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  transition: .4s;
+  opacity: 1;
+}
+
+.slider .fa-moon {
+  color: #f1c40f;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  transition: .4s;
+  opacity: 0;
+}
+
+input:checked + .slider .fa-sun {
+  opacity: 0;
+}
+
+input:checked + .slider .fa-moon {
+  opacity: 1;
+}
+
+
+/* 应用主题颜色 */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* 添加到styles.css文件中 */
+
+.btn, .icon {
+  transition: all 0.3s ease;
+}
+
+.btn:hover, .icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #0077b5, #00a0dc);
+}
+
+.icon:hover {
+  filter: drop-shadow(0 0 5px rgba(0, 119, 181, 0.6));
+}
